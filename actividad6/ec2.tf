@@ -1,3 +1,11 @@
+variable instance_type {
+  description = "The type instance EC2"
+  type        = string
+  default     = "t2.micro"
+}
+
+
+
 locals {
     instance_count = 2
     instance_name = act6-Ismael_dev1-David_dev2
