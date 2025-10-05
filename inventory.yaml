@@ -1,0 +1,18 @@
+all:
+  children:
+    myhosts:
+      hosts:
+        localhost:
+          ansible_connection: local
+    webservers:
+      hosts:
+        web1.example.com:
+          ansible_user: ubuntu
+        web2.example.com:
+          ansible_user: ubuntu
+    dbservers:
+      hosts:
+        db1.example.com:
+          ansible_user: admin
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
