@@ -1,0 +1,19 @@
+# Ignorar TODO por defecto
+*
+
+# Pero incluir explícitamente los archivos que SÍ quieres subir
+!.gitignore
+!Install_htop.yaml
+!Inventory.ini
+!providers.tf
+!servers.tf
+!variables.tfvars
+
+# Excluir específicamente el estado de Terraform (no lo subas!)
+terraform.tfstate
+*.tfstate.*
+
+# Excluir archivos temporales y de backup
+*.backup
+*.tmp
+*.temp
